@@ -1,0 +1,34 @@
+/* creating variables in global scope*/
+:root{
+    --red: #ff6f69;
+    --black: #1a1916;
+    --yellow: #ffcc5c;
+}
+html, body {
+    background: var(--black);
+    color: var(--red);
+}
+
+h1, p {
+    color: var(--red);
+}
+/* creating variable in local scope */
+#navbar{
+    --nav-red: #ff3f69;
+}
+
+#navbar a {
+    color: var(--nav-red);
+}
+
+.item {
+    /* over writing variables */
+    --red: #ff8e69;
+    background: var(--yellow);
+}
+
+button {
+    --btn-yellow: #ffff00;
+    background: var(--btn-yellow);
+    color: var(--yellow);
+}
